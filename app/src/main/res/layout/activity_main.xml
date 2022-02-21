@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="200dp"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="104dp"
+        android:hint="Enter your height in CM"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="200dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight in KG"
+        android:layout_marginTop="46dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHeight"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="39dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/etWeight"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/bg_button"
+
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:hint="Fill the required fields"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonView"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/buttonView"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
